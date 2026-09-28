@@ -31,7 +31,7 @@ The preprocessing and estimator are combined in a single sklearn `Pipeline` for 
 - Categorical features: most-frequent imputation and one-hot encoding with unknown-category support.
 - `ColumnTransformer`: applies the correct transformations to each feature group.
 
-The data uses an 80/20 stratified split with `random_state=42`. Model selection is performed using only the training partition with 5-fold `StratifiedKFold`. Mean F1 is the primary selection metric. Mean F1 is the primary model-selection metric, with ROC-AUC used as a tie-breaker when F1 scores are very close. The selected pipeline is then fitted on the complete training partition and evaluated once on the untouched holdout set.
+The data uses an 80/20 stratified split with `random_state=42`. Model selection is performed using only the training partition with 5-fold `StratifiedKFold`. Mean F1 is the primary model-selection metric, with ROC-AUC used as a tie-breaker when F1 scores are very close. The selected pipeline is then fitted on the complete training partition and evaluated once on the untouched holdout set.
 
 ## Results
 
