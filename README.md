@@ -143,9 +143,6 @@ customer-churn-intelligence/
 ├── app.py
 ├── data/
 │   └── telco_churn.csv
-├── models/
-│   ├── churn_model.joblib
-│   └── model_metadata.json
 ├── src/
 │   ├── evaluate.py
 │   ├── preprocess.py
@@ -158,7 +155,8 @@ customer-churn-intelligence/
 ├── tests/
 │   └── test_api.py
 ├── requirements.txt
-└── sample_request.json
+├── sample_request.json
+└── .gitignore
 ```
 
 ## Local Setup
